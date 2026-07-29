@@ -18,7 +18,7 @@ const services = [
   ["Integraciones", "Conectá herramientas para evitar duplicación y pérdida de datos.", "Integraciones entre CRM, email, formularios, planillas, APIs y sistemas de gestión."],
 ];
 
-const process = [
+const workflowSteps = [
   ["1", "Entender el negocio", "Relevamos objetivos, tareas, herramientas, responsables y puntos de fricción."],
   ["2", "Diseñar la solución", "Definimos una propuesta simple, priorizada y alineada con el impacto esperado."],
   ["3", "Construir e integrar", "Desarrollamos, conectamos y probamos la solución con foco en seguridad y facilidad de uso."],
@@ -143,7 +143,7 @@ export default function Home() {
           <span className="eyebrow">Cómo trabajamos</span>
           <h2 id="process-title" className="section-title">Un proceso claro, ágil y enfocado en resultados.</h2>
           <div className="mt-12 grid gap-5 lg:grid-cols-4">
-            {process.map(([number, title, copy]) => <article key={number} className="relative border-t border-blue-500/55 pt-8"><span className="grid h-12 w-12 place-items-center rounded-full bg-blue-600 font-extrabold shadow-[0_14px_35px_rgba(37,99,255,.28)]">{number}</span><h3 className="mt-6 text-lg font-bold">{title}</h3><p className="mt-3 text-sm leading-7 text-slate-400">{copy}</p></article>)}
+            {workflowSteps.map(([number, title, copy]) => <article key={number} className="relative border-t border-blue-500/55 pt-8"><span className="grid h-12 w-12 place-items-center rounded-full bg-blue-600 font-extrabold shadow-[0_14px_35px_rgba(37,99,255,.28)]">{number}</span><h3 className="mt-6 text-lg font-bold">{title}</h3><p className="mt-3 text-sm leading-7 text-slate-400">{copy}</p></article>)}
           </div>
         </div>
       </section>
